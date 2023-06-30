@@ -128,6 +128,10 @@ nav {
     transition: .5s;
 }
 
+.image-container img {
+    border: 2px solid rgb(255, 255, 255, .3);
+}
+
 .image-container:not(:first-child) img {
     filter: grayscale(100%);
 }
@@ -204,7 +208,7 @@ nav {
     height: auto;
     background-color: none;
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
     padding-bottom: 0.5rem ;
 }
 
@@ -222,15 +226,16 @@ nav {
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 1rem 0;
+    padding-bottom: 2rem;
     background-color: transparent;
-    border: thin solid #f0f0f0;
-    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* border-radius: 4px; */
     box-shadow: 0px 4px 4px 0.5px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
     height: 100%;
+    padding: 1.5rem;
 }
 
 img {
@@ -240,16 +245,20 @@ img {
 }
 
 .product-name {
-    padding: 1rem 0rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #c4c4c4;
 }
 
 .product-CTA-button {
     border: none;
-    border-radius: 4px;
-    background-color:#00579C;
-    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(235, 235, 94, .6);
+    color: #c4c4c4;
     width: fit-content;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     
 }
@@ -257,8 +266,7 @@ img {
 .product-pagination {
     width: 100%;
     height: auto;
-    background-color: none;
-    color: #E6E8EC;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,22 +278,18 @@ img {
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
+    border-color: rgb(255, 255, 255, .3);
     border-style: solid none solid solid;
-    border-width: thin;
-}
-
-.product-pagination-button:first-of-type {
-    border-radius: 4px 0 0 4px;
+    border-width: 2px;
 }
 
 .product-pagination-button:last-of-type {
-    border-radius: 0 4px 4px 0;
-    border-right: solid;
-    border-width: thin;
+    border-right: solid rgb(255, 255, 255, .3);
+    border-width: 2px;
 }
 
 .button-label {
-    color: #1C71FD;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 footer {
