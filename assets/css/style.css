@@ -38,7 +38,7 @@ ul li:hover {
     overflow-x: hidden;
     height: 100vh;
     display: grid;
-    background-image: url("/assets/img/Car-BG.jpg");
+    background-image: url("../img/Car-BG.jpg");
     background-color: #070707;
     grid-template-columns: 100%;
     grid-template-rows: 9% 80% 11%;
