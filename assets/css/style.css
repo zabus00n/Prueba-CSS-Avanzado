@@ -77,17 +77,6 @@ ul li:hover {
         "footer";
 }
 
-@media screen and (min-width: 576px) {
-    .grid-container {
-        grid-template-areas:
-            "nav image-gallery"
-            "nav products"
-            "footer footer";
-        grid-template-columns: 300px auto;
-        grid-template-rows: auto auto 15%;
-    }
-}
-
 nav {
     display: flex;
     flex-direction: row;
@@ -97,65 +86,6 @@ nav {
     grid-area: nav;
     background-color: none;
     color: #cecdcd;
-}
-
-@media screen and (max-width: 576px) {
-    .menu-list {
-        display: none;
-    }
-    .product-gallery {
-        overflow-y: auto;
-    }
-    main.image-gallery {
-        display: none;
-    }
-    nav {
-        border-bottom: thin solid rgb(255, 255, 255, 0.1);
-    }
-    .brand p {
-        font-size: 18px;
-        letter-spacing: 1.75px;
-    }
-    .brand svg {
-        max-width: 36px;
-    }
-    .cars h2     {
-        font-size: 20px;
-        letter-spacing: 1px;
-        padding-bottom: 16px;
-    }
-    .grid-container {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 77% 50%;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .brand svg {
-        max-width: 56px;
-    }
-
-    nav {
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 80px;
-        margin-top: 24px;
-    }
-
-    .brand p {
-        font-size: 28px;
-        letter-spacing: 2px;
-        padding-left: 8px;
-    }
-
-    .brand i {
-        font-size: 32px;
-    }
-
-    .menu i {
-        display: none;
-    }
 }
 
 .image-gallery {
@@ -239,18 +169,6 @@ h2 {
     color: #cecdcd;;
 }
     
-@media screen and (min-width: 576px) {
-    .products {
-        margin-bottom: 40px;
-        padding: 0;
-    }
-    .cars {
-        margin-top: 32px;
-        padding-left: 24px;
-        width: 100%; 
-    }
-}
-
 .brand {
     font-family: "Play", sans-serif;
     font-weight: bold;
@@ -267,13 +185,6 @@ h2 {
     display: grid;
     gap: 32px;
     padding: 0px 16px;
-}
-
-@media screen and (min-width: 576px) {
-    .product-gallery {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 24px;
-    }
 }
 
 .product-card {
@@ -387,13 +298,6 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 576px) {
-    footer {
-        gap: 12px;
-        padding: 32px;
-    }
-}
-
 .social-list {
     display: flex;
     flex-direction: row;
@@ -432,4 +336,95 @@ footer p {
     font-weight: 500;
     letter-spacing: 0.5px;
     line-height: 150%;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .menu-list {
+        display: none;
+    }
+    .product-gallery {
+        overflow-y: auto;
+    }
+    main.image-gallery {
+        display: none;
+    }
+    nav {
+        border-bottom: thin solid rgb(255, 255, 255, 0.1);
+    }
+    .brand p {
+        font-size: 18px;
+        letter-spacing: 1.75px;
+    }
+    .brand svg {
+        max-width: 36px;
+    }
+    .cars h2     {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding-bottom: 16px;
+    }
+    .grid-container {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 77% 50%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .grid-container {
+        grid-template-areas:
+            "nav image-gallery"
+            "nav products"
+            "footer footer";
+        grid-template-columns: 300px auto;
+        grid-template-rows: auto auto 15%;
+    }
+
+    .brand svg {
+        max-width: 56px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 80px;
+        margin-top: 24px;
+    }
+
+    .brand p {
+        font-size: 28px;
+        letter-spacing: 2px;
+        padding-left: 8px;
+    }
+
+    .brand i {
+        font-size: 32px;
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .products {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .cars {
+        margin-top: 32px;
+        padding-left: 24px;
+        width: 100%; 
+    }
+
+    .product-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 24px;
+    }
+
+    footer {
+        gap: 12px;
+        padding: 32px;
+    }
+
 }
