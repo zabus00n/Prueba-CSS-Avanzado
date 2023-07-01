@@ -7,11 +7,7 @@
     text-decoration: none;
 }
 
-.cog {
-    fill: rgb(233, 233, 84);
-}
-
-.thunder {
+.cog , .thunder {
     fill: rgb(233, 233, 84);
 }
 
@@ -26,7 +22,6 @@
 
 .cog {
     animation: spin 3s ease 1s 2 alternate;
-
 }
 
 @keyframes spin {
@@ -39,15 +34,18 @@
 }
 
 h1 {
+    font-family: "Play", sans-serif;
     text-align: center;
     font-size: 40px;
     color: #cecdcd;
-    font-weight: 700;
-    letter-spacing: 1.25px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 ul {
     list-style-type: none;
+    font-family: "Play", sans-serif;
+    letter-spacing: 1px;
 }
 
 ul li:hover {
@@ -59,13 +57,13 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
     font-size: 24px;
     color: #cecdcd;
 }
 
 .grid-container {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     height: 100vh;
     display: grid;
@@ -115,11 +113,16 @@ nav {
         border-bottom: thin solid rgb(255, 255, 255, 0.1);
     }
     .brand p {
-        font-size: 20px;
-        letter-spacing: 0.5px;
+        font-size: 18px;
+        letter-spacing: 1.75px;
     }
     .brand svg {
-        max-width: 40px;
+        max-width: 36px;
+    }
+    .cars h2     {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding-bottom: 16px;
     }
 }
 
@@ -137,7 +140,7 @@ nav {
 
     .brand p {
         font-size: 28px;
-        letter-spacing: 0.75px;
+        letter-spacing: 2px;
         padding-left: 8px;
     }
 
@@ -220,22 +223,36 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    padding: 16px;
+    padding: 16px 0;
 }
 
+h2 {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 28px;
+    color: #cecdcd;;
+}
+    
 @media screen and (min-width: 576px) {
     .products {
         margin-bottom: 40px;
         padding: 0;
     }
+    .cars {
+        margin-top: 32px;
+        padding-left: 24px;
+        width: 100%; 
+    }
 }
 
 .brand {
+    font-family: "Play", sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
 .product-gallery {
@@ -244,7 +261,7 @@ nav {
     background-color: none;
     display: grid;
     gap: 32px;
-    padding-bottom: 8px;
+    padding: 0px 16px;
 }
 
 @media screen and (min-width: 576px) {
@@ -269,7 +286,7 @@ nav {
 
 .product-image {
     height: 100%;
-    padding: 24px;
+    padding: 24px 24px 0px 24px;
 }
 
 img {
@@ -279,7 +296,7 @@ img {
 }
 
 .product-name {
-    padding-bottom: 24px;
+    padding-bottom: 36px;
     font-weight: 700;
     letter-spacing: 0.5px;
     color: #aaaaaa;
@@ -312,11 +329,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 16px;
 }
-
-/* .product-pagination:hover .product-pagination-button{
-    border: none;
-} */
 
 .product-pagination-button {
     display: flex;
@@ -384,13 +398,29 @@ footer {
     height: 22px;
 }
 
+.social-list:hover {
+    gap: 10px
+}
+
 .fa-instagram {
     vertical-align: middle;
     font-size: 22px;
 }
 
+.fa-instagram:hover {
+    cursor: pointer;
+    color: rgb(233, 233, 84);
+    font-size: 24px
+}
+
 .fa-facebook {
     font-size: 20px;
+}
+
+.fa-facebook:hover {
+    cursor: pointer;
+    color: rgb(233, 233, 84);
+    font-size: 22px
 }
 
 footer p {
